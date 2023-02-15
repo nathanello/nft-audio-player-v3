@@ -1,0 +1,82 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden !important;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  z-index: -2;
+  position: fixed;
+}
+
+
+.line-break {
+  white-space: pre-wrap;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+Player {
+  z-index: -1;
+}
+
+#tsconfetti {
+  /* position: relative; */
+  transition: 1s ease-out;
+  z-index: 10;
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+}
+
+/* Hides tracklist */
+.css-nen11g-MuiStack-root {
+	display: none !important;
+}
+
+/* Adjusts player position */
+.css-10ld9zh {
+    margin-top: 6% !important;
+}
+
+/* Hide prev/next buttons */
+button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root:first-child,
+button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root:last-child {
+	display: none !important;
+}
