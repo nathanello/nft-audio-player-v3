@@ -11,6 +11,7 @@ html, body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
+  overflow: hidden !important;
 }
 
 .cover {
@@ -62,4 +63,14 @@ Player {
   margin: 0;
   z-index: 10;
   /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+}
+
+/* Hides tracklist */
+.css-nen11g-MuiStack-root {
+	display: none !important;
+}
+
+/* Adjusts player position */
+.css-10ld9zh {
+    margin-top: 6% !important;
 }
