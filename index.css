@@ -74,3 +74,9 @@ Player {
 .css-10ld9zh {
     margin-top: 6% !important;
 }
+
+/* Hide prev/next buttons */
+button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root:first-child,
+button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root:last-child {
+	display: none !important;
+}
